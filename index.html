@@ -4,26 +4,30 @@
     <title>ngX</title>
 </head>
 <body data-ng-app="app">
-    
+
     <ng-x-header>
-        
+
     </ng-x-header>
 
     <div data-ng-view>
-        
+
     </div>
-    
+
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
     <script src="node_modules/ng-x/dist/ngX.js"></script>
     <script src="node_modules/ng-x-components/dist/ngX.components.js"></script>
     <script src="src/app/app.module.js"></script>
+
     <script src="src/app/components/home.component.js"></script>
     <script src="src/app/components/editWebComponent.component.js"></script>
-    <script src="src/app/components/header.component.js"></script>
+
+    <script src="src/app/subComponents/ui/header.component.js"></script>
+
+    <script src="src/app/subComponents/webComponentEditorComponent.js"></script>
+    <script src="src/app/subComponents/webComponentListComponent.js"></script>
+
     <script src="src/app/providers/webComponentDataService.js"></script>
-    <script src="src/app/components/webComponentEditorComponent.js"></script>
-    <script src="src/app/components/webComponentListComponent.js"></script>
     <script src="src/app/providers/webComponent.model.js"></script>
 </body>
 

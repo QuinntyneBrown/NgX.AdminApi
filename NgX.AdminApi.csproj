@@ -199,9 +199,9 @@
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\components\editWebComponent.component.ts" />
     <TypeScriptCompile Include="src\app\components\home.component.ts" />
-    <TypeScriptCompile Include="src\app\components\header.component.ts" />
-    <TypeScriptCompile Include="src\app\components\webComponentEditorComponent.ts" />
-    <TypeScriptCompile Include="src\app\components\webComponentListComponent.ts" />
+    <TypeScriptCompile Include="src\app\subComponents\ui\header.component.ts" />
+    <TypeScriptCompile Include="src\app\subComponents\webComponentEditorComponent.ts" />
+    <TypeScriptCompile Include="src\app\subComponents\webComponentListComponent.ts" />
     <TypeScriptCompile Include="src\app\providers\webComponent.model.ts" />
     <TypeScriptCompile Include="src\app\providers\webComponentDataService.ts" />
     <TypeScriptCompile Include="typings\angularjs\angular.d.ts" />
