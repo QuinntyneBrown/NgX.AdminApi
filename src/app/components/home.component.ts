@@ -1,6 +1,5 @@
 ﻿class HomeComponent {
     
-
 }
 
 ngX.Component({

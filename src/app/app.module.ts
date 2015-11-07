@@ -7,8 +7,11 @@
     });    
 
     $routeProvider.when("/create-web-component", {
-        componentName: "editWebComponentComponent",
-        templateUrl:"/src/app/components/editWebComponent.component.html"
-    });                
+        componentName: "editWebComponentComponent"
+    });  
+    
+    $routeProvider.when("/edit-web-component/:id", {
+        componentName: "editWebComponentComponent"
+    });               
 
 }])
