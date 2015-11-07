@@ -6,11 +6,13 @@
         return this.dataService.fromService({ url: this.baseUri +  "/getall", method: "GET" });
     }
 
-    public add = () => {
-        return this.dataService.fromService({ url: this.baseUri + "/add", method: "GET" });
+    public add = (options: any) => {
+
+
+        return this.dataService.fromService({ url: this.baseUri + "/add", method: "POST", data: JSON.stringify(options.data) });
     } 
 
-    public get baseUri() { return "http://localhost:4646/api/webcomponent"; }
+    public get baseUri() { return "/api/webcomponent"; }
 } 
 
 

@@ -3,11 +3,20 @@
     constructor() {
         
     }
+
+    public onInit = () => {
+        
+    }
+
+    public onUpdate = () => {
+        
+    }
 } 
 
 ngX.Component({
     selector: "web-component-editor",
     component: WebComponentEditorComponent,
+    styles:".web-component-editor { background-color: red; }",
     inputs: ["webComponent"],
     template: [
         "<div>",  
@@ -31,7 +40,7 @@ ngX.Component({
         "<input type='text' data-ng-model='vm.webComponent.css'></input>",
         "</div>",
         "<div class='form-control'>",
-        "<input type='submit' data-ng-click='vm.webComponent.save()' value='save'></input>",
+        "<input type='submit' data-ng-click='vm.webComponent.save()' value='Save'></input>",
         "</div>",
         "</form>",
         "</div>"

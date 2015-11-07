@@ -17,6 +17,6 @@ namespace NgX.AdminApi.Server.Data
 
         }
 
-        public IRepository<WebComponent> Photos { get { return GetStandardRepo<WebComponent>(); } }
+        public IRepository<WebComponent> WebComponents { get { return GetStandardRepo<WebComponent>(); } }
     }
 }

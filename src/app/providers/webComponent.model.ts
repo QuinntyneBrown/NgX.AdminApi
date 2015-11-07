@@ -16,13 +16,25 @@
     }
 
     public save = () => {
-        
+        var deferred = this.$q.defer();
+
+        this.webComponentDataService.add({ data: {
+            template: this.template,
+            css: this.css,
+            version: this.version,
+            name: this.name
+        }}).then((results) => {
+            return deferred.promise;            
+        });
+
+        return deferred.promise;
     }
 
     public id:number = 0;
     public template: string;
     public css: string;
     public version: string;
+    public name: string;
 
 }
 

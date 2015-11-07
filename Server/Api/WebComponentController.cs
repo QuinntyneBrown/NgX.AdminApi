@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Common.Controllers;
+using Common.Data.Contracts;
 using NgX.AdminApi.Server.Data.Contracts;
 using NgX.AdminApi.Server.Models;
 
@@ -16,7 +17,9 @@ namespace NgX.AdminApi.Server.Api
         
         public WebComponentController(IAdminUow uow)
         {
-            this.uow = uow;
+            base.uow = uow;
+            base.repository = uow.WebComponents;
+            
         }
 
         [Route("getall")]
@@ -26,14 +29,6 @@ namespace NgX.AdminApi.Server.Api
             return Ok();
         }
 
-
-
-        public override IHttpActionResult Add(WebComponent entity)
-        {
-            return base.Add(entity);
-        }
-
-        protected IAdminUow uow;
 
     }
 }

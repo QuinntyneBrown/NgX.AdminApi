@@ -7,7 +7,14 @@ namespace NgX.AdminApi.Server.Models
 {
     public class WebComponent
     {
+        public WebComponent()
+        {
+            
+        }
+
         public int Id { get; set; }
+
+        public string Name { get; set; }
 
         public string Template { get; set; }
 

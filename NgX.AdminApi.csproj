@@ -157,6 +157,7 @@
   <ItemGroup>
     <Content Include="gulpfile.config.js" />
     <Content Include="gulpfile.js" />
+    <Content Include="node_modules\angular\angular.js" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

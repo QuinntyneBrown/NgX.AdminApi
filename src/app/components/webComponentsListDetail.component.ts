@@ -27,7 +27,8 @@
 
 ngX.Component({
     component: WebComponentsListDetailComponent,
-    routes: ["/create-web-component","/edit-web-component/:id","web-components"],
+    routes: ["/web-component/create", "/web-component/edit", "/web-component/list"],
+    styles:[""].join(" "),
     key: "listDetail",
     providers: ["routeData"]
 });
