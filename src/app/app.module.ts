@@ -6,12 +6,16 @@
         componentName: "homeComponent"
     });    
 
-    $routeProvider.when("/create-web-component", {
-        componentName: "editWebComponentComponent"
+    $routeProvider.when("/web-component/create", {
+        componentName: "webComponentsListDetailComponent"
     });  
     
-    $routeProvider.when("/edit-web-component/:id", {
-        componentName: "editWebComponentComponent"
+    $routeProvider.when("/web-component/edit", {
+        componentName: "webComponentsListDetailComponent"
     });               
+
+    $routeProvider.when("/web-component/list", {
+        componentName: "webComponentsListDetailComponent"
+    });
 
 }])

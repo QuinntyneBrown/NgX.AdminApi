@@ -26,6 +26,8 @@ namespace NgX.AdminApi.Server.Api
             return Ok();
         }
 
+
+
         public override IHttpActionResult Add(WebComponent entity)
         {
             return base.Add(entity);
