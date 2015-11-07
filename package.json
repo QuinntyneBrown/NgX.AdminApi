@@ -1,49 +1,25 @@
 {
-  "name": "ng-x.admin-api",
-  "version": "0.0.2",
-  "description": "admin api for ng-x",
-  "main": "index.html",
+  "name": "ngX.AdminApi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/QuinntyneBrown/NgX.AdminApi.git"
+    "url": "https://github.com/QuinntyneBrown/ngX.AdminApi.git"
   },
   "author": "quinntynebrown <quinntynebrown@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/QuinntyneBrown/NgX.AdminApi/issues"
+    "url": "https://github.com/QuinntyneBrown/ngX.AdminApi/issues"
   },
-    "homepage": "https://github.com/QuinntyneBrown/NgX.AdminApi",
-    "devDependencies": {
-        "angular-mocks": "^1.4.5",
-        "event-stream": "^3.3.2",
-        "gulp": "^3.8.11",
-        "gulp-angular-templatecache": "^1.8.0",
-        "gulp-autoprefixer": "^3.1.0",
-        "gulp-clean": "^0.3.1",
-        "gulp-concat": "^2.5.2",
-        "gulp-karma": "0.0.4",
-        "gulp-rename": "^1.2.2",
-        "gulp-rimraf": "^0.1.1",
-        "gulp-sass": "^2.0.4",
-        "gulp-sourcemaps": "^1.5.1",
-        "gulp-tslint": "^1.4.4",
-        "gulp-typedoc": "^1.2.1",
-        "gulp-typescript": "^2.5.0",
-        "gulp-uglify": "^1.4.1",
-        "jquery": "^2.1.4",
-        "karma": "^0.12.36",
-        "karma-chrome-launcher": "^0.2.0",
-        "karma-coverage": "^0.2.4",
-        "karma-jasmine": "^0.3.6",
-        "karma-phantomjs-launcher": "^0.2.1",
-        "karma-spec-reporter": "0.0.19"
-    },
+  "homepage": "https://github.com/QuinntyneBrown/ngX.AdminApi",
   "dependencies": {
     "angular": "^1.4.7",
     "angular-route": "^1.4.7",
-    "ng-x": "^0.3.15"
+    "ng-x": "^0.3.18",
+    "ng-x-components": "0.0.1"
   }
 }
