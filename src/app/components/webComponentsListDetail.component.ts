@@ -6,22 +6,26 @@
 
     public static canActivate = () => {
         return ["$q", "$routeParams", "webComponent", ($q: any, $routeParams: any, webComponent: any) => {
-
             var deferred = $q.defer();
+            var promises = [];
 
             if ($routeParams.id) {
 
             } else {
-                webComponent.createInstanceAsync().then((results) => {
-                    deferred.resolve({ "webComponent": results });
+
+                promises.push(webComponent.createInstanceAsync());
+                promises.push(webComponent.getAll());
+
+                $q.all(promises).then((resultsArray) => {
+                    deferred.resolve({
+                        "webComponent": resultsArray[0],
+                        "webComponents": resultsArray[1]
+                    });
                 });
             }
-
             return deferred.promise;
-
         }];
     }
-
 
 }
 

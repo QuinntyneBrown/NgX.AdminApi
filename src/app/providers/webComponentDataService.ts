@@ -3,7 +3,7 @@
     constructor(private dataService: any) { }
 
     public getAll = () => {
-        return this.dataService.fromService({ url: this.baseUri +  "/getall", method: "GET" });
+        return this.dataService.fromService({ url: this.baseUri + "/getall", method: "GET" });
     }
 
     public add = (options: any) => {

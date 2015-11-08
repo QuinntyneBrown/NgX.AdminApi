@@ -30,6 +30,27 @@
         return deferred.promise;
     }
 
+    public getAll = () => {
+        var deferred = this.$q.defer();
+        var webComponents = [];
+        this.webComponentDataService.getAll().then((results) => {
+            var promises = [];
+
+            for (var i = 0; i < results.data.length; i++) {
+                promises.push(this.createInstanceAsync({ data: results.data[i] }));
+            }
+            this.$q.all(promises).then((resultsArray) => {
+                deferred.resolve(resultsArray);
+            });
+
+            return deferred.promise;
+        }).catch((error) => {
+            alert("wtf");
+        });
+
+        return deferred.promise;
+    }
+
     public id:number = 0;
     public template: string;
     public css: string;

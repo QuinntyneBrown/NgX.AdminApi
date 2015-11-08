@@ -1,7 +1,12 @@
 ﻿<div>
-   
-    <web-component-editor web-component="vm.webComponent"></web-component-editor>
+    
+    <div style="width: 50%; position: relative; float:left">
+        <web-component-list web-components="vm.webComponents"></web-component-list>
+    </div>
 
-    <web-component-list></web-component-list>
-
+    <div style="width: 50%; position: relative; float:right">
+        <web-component-editor web-component="vm.webComponent"></web-component-editor>    
+    </div>
+    
+    <div style="clear: both;"></div>
 </div>

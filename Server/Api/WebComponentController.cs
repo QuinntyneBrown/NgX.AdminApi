@@ -11,24 +11,22 @@ using NgX.AdminApi.Server.Models;
 
 namespace NgX.AdminApi.Server.Api
 {
-    [RoutePrefix("api/webcomponents")]
-    public class WebComponentController : EFController<WebComponent>
+    [RoutePrefix("api/webcomponent")]
+    public class WebComponentController: EFController<WebComponent>
     {
         
         public WebComponentController(IAdminUow uow)
         {
             base.uow = uow;
-            base.repository = uow.WebComponents;
-            
+            base.repository = uow.WebComponents;            
         }
 
-        [Route("getall")]
+        [Route("getAll")]
         [HttpGet]
         public IHttpActionResult GetAll()
         {
-            return Ok();
+            return Ok(repository.GetAll());
         }
-
 
     }
 }
